@@ -1,0 +1,55 @@
+.account-masthead {
+    background-color: #374A67;
+}
+
+.masthead {
+  background-color: white;
+}
+
+.masthead-menu {
+  background-color: #609BB8;
+  width: auto;
+  height: 70px;
+}
+
+.nav-items {
+  margin-left: 680px;
+}
+
+@media (min-width: 992px) {
+  .masthead .site-search {
+    margin-left: 535px;
+  }
+}
+
+.box {
+  box-shadow: none;
+}
+
+.hero .box {
+  border: none;
+}
+
+.hero {
+  background: url("../../images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.homepage .module-search .module-content {
+  background-color: #374A67;
+}
+
+.homepage .module-search {
+  padding: 0px;
+}
+
+.homepage .module-search .tags {
+  background-color: #374A67;
+}
+
+.site-footer,
+body {
+  background-color: #374A67;
+}

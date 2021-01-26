@@ -1,0 +1,4 @@
+radius_style:
+  output: radius_assets/%(version)s_radius_style.css
+  contents:
+    - styles/radius.css
