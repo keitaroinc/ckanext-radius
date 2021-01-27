@@ -1,25 +1,26 @@
 .account-masthead {
-    background-color: #374A67;
+    background-color: #619CBB;
 }
 
 .masthead {
   background-color: white;
 }
 
-.masthead-menu {
-  background-color: #609BB8;
-  width: auto;
-  height: 70px;
+.masthead .navigation .nav-pills li a {
+  background-color: white;
+  color: #374A67;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
-.nav-items {
-  margin-left: 680px;
+.masthead .navigation .nav-pills li a:hover {
+  background-color: #374A67;
+  color: white;
 }
 
-@media (min-width: 992px) {
-  .masthead .site-search {
-    margin-left: 535px;
-  }
+.masthead .navigation .nav-pills li.active a {
+  background-color: #374A67;
+  color: white;
 }
 
 .box {
@@ -51,5 +52,5 @@
 
 .site-footer,
 body {
-  background-color: #374A67;
+  background-color: #619CBB;
 }
