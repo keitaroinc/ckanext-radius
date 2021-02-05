@@ -1,0 +1,177 @@
+scheming_version: 2
+dataset_type: dataset
+about: A reimplementation of the default CKAN dataset schema
+about_url: http://github.com/ckan/ckanext-scheming
+
+
+dataset_fields:
+
+- field_name: title
+  label: Title
+  preset: title
+  form_placeholder: eg. A descriptive title
+
+- field_name: name
+  label: URL
+  preset: dataset_slug
+  form_placeholder: eg. my-dataset
+
+- field_name: notes
+  label: Description
+  form_snippet: markdown.html
+  form_placeholder: eg. Some useful notes about the data
+
+- field_name: tag_string
+  label: Tags
+  preset: tag_string_autocomplete
+  form_placeholder: eg. economy, mental health, government
+
+- field_name: license_id
+  label: License
+  form_snippet: license.html
+  help_text: License definitions and additional information can be found at http://opendefinition.org/
+
+- field_name: owner_org
+  label: Organization
+  preset: dataset_organization
+
+- field_name: source_system
+  label: Source System
+  form_placeholder: http://example.com/dataset.json
+  display_property: foaf:homepage
+  display_snippet: link.html
+  help_text: Link to information about source system(s) delivering the data
+
+- field_name: data_owner
+  label: Data Owner Email
+  form_placeholder: joe@example.com
+  display_property: dc:creator
+  display_snippet: email.html
+  display_email_name_field: data_source_owner
+  help_text: The owner responsible of the data usages in the data lake. The data owner provides general guidance in relation to purpose and perspective of how this data set is exposed at the data lake.
+
+- field_name: data_specialist
+  label: Data Specialist Email
+  form_placeholder: joe@example.com
+  display_property: dc:creator
+  display_snippet: email.html
+  display_email_name_field: data_source_specialist
+  help_text: The specialist of the data, who can provide more general guidance in relation to purpose and perspective of this data.
+
+- field_name: data_steward
+  label: Data Steward Email
+  form_placeholder: joe@example.com
+  display_property: dc:contributor
+  display_snippet: email.html
+  display_email_name_field: data_source_steward
+  help_text: The data lake engineer responsible of the data usages in the data lake. The data steward can support in regards to this data set is taken into and exposed by the data lake (ingesting pipeline, data availability, possible transformation of data etc.)
+
+- field_name: status
+  label: Status
+  preset: select
+  choices:
+  - value: active
+    label: Active
+  - value: deprecated
+    label: Deprecated
+  - value: not_used
+    label: Not used
+  required: true
+
+- field_name: access
+  label: Access
+  form_snippet: markdown.html
+  form_placeholder:
+  help_text: Information on how to get access. Either a person by mail or an AD group.
+
+- field_name: raw_storage
+  label: Raw storage
+  form_snippet: markdown.html
+  form_placeholder:
+  help_text: Name of the folder in data lake utilised as raw storage for the data exposed in this data set
+  visibility: editor
+
+- field_name: archiving
+  label: Archiving
+  preset: number
+  form_placeholder:
+  help_text: Number of days before data is archived (moved to colder storage etc.). Zero means data is never archived.
+  visibility: editor
+
+- field_name: cleanup
+  label: Cleanup
+  preset: number
+  form_placeholder:
+  help_text: Number of days before data is deleted. Zero means data is never cleaned up.
+  visibility: editor
+
+- field_name: lineage
+  label: Lineage
+  form_snippet: markdown.html
+  form_placeholder:
+  help_text: Name of the folder in data lake utilised as raw storage for the data exposed in this data set
+  visibility: editor
+
+
+resource_fields:
+
+- field_name: url
+  label: URL
+  preset: resource_url_upload
+
+- field_name: name
+  label: Name
+  form_placeholder: eg. January 2011 Gold Prices
+
+- field_name: description
+  label: Description
+  form_snippet: markdown.html
+  form_placeholder: Some useful notes about the data
+
+- field_name: format
+  label: Format
+  preset: resource_format_autocomplete
+
+- field_name: gdpr
+  label: GDPR
+  preset: select
+  choices:
+  - value: no_personal
+    label: No personal
+  - value: generic_personal
+    label: Generic personal
+  - value: confidential_general_personal
+    label: Confidential general personal
+  - value: sensitive_personal
+    label: Sensitive personal
+  required: true
+
+- field_name: state
+  label: State
+  preset: select
+  choices:
+  - value: active
+    label: Active
+  - value: deprecated
+    label: deprecated
+  - value: not_used
+    label: Not Used
+  required: true
+
+- field_name: update_ratio
+  label: Update Ratio
+  preset: select
+  choices:
+  - value: hourly
+    label: Hourly
+  - value: daily
+    label: Daily
+  - value: weekly
+    label: Weekly
+  - value: monthly
+    label: Monthly
+  - value: quarterly
+    label: Quarterly
+  - value: yearly
+    label: Yearly
+  required: true
