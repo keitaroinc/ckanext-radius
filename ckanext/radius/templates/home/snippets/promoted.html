@@ -7,7 +7,7 @@
     {% else %}
       <h1 class="page-heading">{{ _("Welcome to Radius Data Lake") }}</h1>
       <p>
-        {% trans %}This will be replaced with the text that the client will provide. The image below as well
+        {% trans %}This will be replaced with the text that the client will provide.
         {% endtrans %}
       </p>
     {% endif %}
@@ -15,10 +15,10 @@
 
   {% block home_image %}
     <section class="featured media-overlay hidden-xs">
-      <h2 class="media-heading">{% block home_image_caption %}{{ _("This is a featured section") }}{% endblock %}</h2>
+      <h2 class="media-heading">{% block home_image_caption %}{{ _("This will be replaced with te required image info text.") }}{% endblock %}</h2>
       {% block home_image_content %}
         <a class="media-image" href="#">
-          <img class="img-responsive" src="{{ h.url_for_static('/base/images/placeholder-420x220.png') }}" alt="Placeholder" width="420" height="220" />
+          <img class="img-responsive" src="{{ h.url_for_static('images/1.jpg') }}" alt="Placeholder" width="420" height="220" />
         </a>
       {% endblock %}
     </section>
