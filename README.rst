@@ -1,29 +1,3 @@
-.. You should enable this project on travis-ci.org and coveralls.io to make
-   these badges work. The necessary Travis and Coverage config files have been
-   generated for you.
-
-.. image:: https://travis-ci.org/duskobogdanovski/ckanext-radius.svg?branch=master
-    :target: https://travis-ci.org/duskobogdanovski/ckanext-radius
-
-.. image:: https://coveralls.io/repos/duskobogdanovski/ckanext-radius/badge.svg
-  :target: https://coveralls.io/r/duskobogdanovski/ckanext-radius
-
-.. image:: https://img.shields.io/pypi/v/ckanext-radius.svg
-    :target: https://pypi.org/project/ckanext-radius/
-    :alt: Latest Version
-
-.. image:: https://img.shields.io/pypi/pyversions/ckanext-radius.svg
-    :target: https://pypi.org/project/ckanext-radius/
-    :alt: Supported Python versions
-
-.. image:: https://img.shields.io/pypi/status/ckanext-radius.svg
-    :target: https://pypi.org/project/ckanext-radius/
-    :alt: Development Status
-
-.. image:: https://img.shields.io/pypi/l/ckanext-radius.svg
-    :target: https://pypi.org/project/ckanext-radius/
-    :alt: License
-
 =============
 ckanext-radius
 =============
