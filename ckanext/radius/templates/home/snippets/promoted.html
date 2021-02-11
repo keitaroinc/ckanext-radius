@@ -5,9 +5,9 @@
     {% if intro %}
       {{ h.render_markdown(intro) }}
     {% else %}
-      <h1 class="page-heading">{{ _("Welcome to Radius Data Lake") }}</h1>
+      <h1 class="page-heading">{{ _("Documentation of data") }}</h1>
       <p>
-        {% trans %}This will be replaced with the text that the client will provide.
+        {% trans %}On this page you can find information about datasets and data sources in the Radius Datalake system. On each dataset you can find responsible persons, data models and how to gain access to the data.
         {% endtrans %}
       </p>
     {% endif %}
@@ -15,7 +15,6 @@
 
   {% block home_image %}
     <section class="featured media-overlay hidden-xs">
-      <h2 class="media-heading">{% block home_image_caption %}{{ _("This will be replaced with te required image info text.") }}{% endblock %}</h2>
       {% block home_image_content %}
         <a class="media-image" href="#">
           <img class="img-responsive" src="{{ h.url_for_static('images/1.jpg') }}" alt="Placeholder" width="420" height="220" />
