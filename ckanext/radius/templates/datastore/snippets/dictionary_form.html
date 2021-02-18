@@ -10,16 +10,17 @@
 
 {{ form.select('info__' ~ position ~ '__type_override',
   label=_('Type Override'), options=[
-  {'name': '', 'value': ''},
-  {'name': 'text', 'value': 'text'},
-  {'name': 'integer', 'value': 'integer'},
-  {'name': 'decimal', 'value': 'decimal'},
-  {'name': 'float8', 'value': 'float'},
-  {'name': 'date', 'value': 'date'},
-  {'name': 'time', 'value': 'time'},
-  {'name': 'timestamp', 'value': 'timestamp'},
-  {'name': 'bytea', 'value': 'byte array'},
-  {'name': 'text[]', 'value': 'array'},
+  {'text': '', 'value': ''},
+  {'text': 'Text', 'value': 'text'},
+  {'text': 'Integer', 'value': 'integer'},
+  {'text': 'Decimal', 'value': 'decimal'},
+  {'text': 'Float', 'value': 'float8'},
+  {'text': 'Date', 'value': 'date'},
+  {'text': 'Time', 'value': 'time'},
+  {'text': 'Timestamp', 'value': 'timestamp'},
+  {'text': 'Byte array', 'value': 'bytea'},
+  {'text': 'Array[Integer]', 'value': 'int[]'},
+  {'text': 'Array[Text]', 'value': 'text[]'},
   ], selected=field.get('info', {}).get('type_override', '')) }}
 
 {{ form.input('info__' ~ position ~ '__label',
