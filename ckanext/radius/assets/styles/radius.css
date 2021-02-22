@@ -54,3 +54,7 @@
 body {
   background-color: #619CBB;
 }
+
+.data-viewer-info {
+  display: none
+}
