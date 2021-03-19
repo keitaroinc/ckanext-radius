@@ -23,11 +23,11 @@ class RadiusPlugin(plugins.SingletonPlugin):
         return facets_dict
 
     # Removing licenses facet from organization page
-    def group_facets(self, facets_dict, package_type):
+    def group_facets(self, facets_dict, group_type, package_type):
         del facets_dict[u'license_id']
         return facets_dict
 
     # Removing licenses facet from group page
-    def organization_facets(self, facets_dict, package_type):
+    def organization_facets(self, facets_dict, organization_type, package_type):
         del facets_dict[u'license_id']
         return facets_dict
